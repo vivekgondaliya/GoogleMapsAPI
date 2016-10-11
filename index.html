@@ -46,6 +46,15 @@
 			marker.addListener('click', function(){
 				infowindow.open(map, marker);
 			});
+
+			//fusion table layer : https://developers.google.com/maps/documentation/javascript/examples/layer-fusiontables-simple
+			var layer = new google.maps.FusionTablesLayer({
+          		query: {
+            	select: '\'Geocodable address\'',
+            	from: '1mZ53Z70NsChnBMm-qEYmSDOvLXgrreLTkQUvvg'
+          		}
+       		});
+        	layer.setMap(map);
 		}
 
 		

@@ -37,6 +37,15 @@
 				map:map,
 				title: 'First marker!'
 			});
+
+			//creating an info window
+			var infowindow = new google.maps.InfoWindow({
+				content:'Content for the info window will be displayed here!'
+			});
+			//add Event listener to open infoWindow
+			marker.addListener('click', function(){
+				infowindow.open(map, marker);
+			});
 		}
 
 		

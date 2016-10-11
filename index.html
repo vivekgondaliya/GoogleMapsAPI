@@ -29,7 +29,16 @@
 				zoom:13
 
 			});	
+
+			//adding marker
+			var tribeca = new google.maps.LatLng(40.719526, -74.0089934);
+			var marker = new google.maps.Marker({
+				position: tribeca,
+				map:map,
+				title: 'First marker!'
+			});
 		}
+
 		
 	</script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt-7bZiW7qWByXReeMKGjl9WkTk0PgIVE&v=3&callback=initMap"></script>
